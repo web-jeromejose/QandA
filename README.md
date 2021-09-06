@@ -45,9 +45,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## installing EsLint and Prettier and Snapshot test
 
-## installing EsLint and Prettier
 ```
 npm install prettier --save-dev
 npm install eslint-config-prettier eslint-plugin-prettier --save-dev
+npm i react-test-renderer --save-dev
 ```
+
+https://reactjs.org/docs/test-renderer.html

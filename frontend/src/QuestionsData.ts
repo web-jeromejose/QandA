@@ -46,6 +46,15 @@ const questions: QuestionData[] = [
     created: new Date(),
     answers: [],
   },
+  {
+    questionId: 3,
+    title: 'What the name of this book?',
+    content:
+      ' So if youre reading this properly, you should know the title of this book',
+    userName: 'Jerome',
+    created: new Date(),
+    answers: [],
+  },
 ];
 
 export const getUnansweredQuestions = async (): Promise<QuestionData[]> => {
