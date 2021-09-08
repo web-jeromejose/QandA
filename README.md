@@ -45,6 +45,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## Create create-react-app project
+
+```
+npx create-react-app frontend
+```
+
 ## installing EsLint and Prettier and Snapshot test
 
 ```
