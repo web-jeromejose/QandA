@@ -1,10 +1,12 @@
 import React from 'react';
-import { UserIcon } from './Icons';
+// @ts-ignore
+import { UserIcon } from './UserIcon.tsx';
 
-export const Header = () => {
+const Header = () => {
   const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.currentTarget.value);
   };
+
   return (
     <div>
       <a href="./"> Q and A</a>
@@ -20,3 +22,4 @@ export const Header = () => {
     </div>
   );
 };
+export default Header;

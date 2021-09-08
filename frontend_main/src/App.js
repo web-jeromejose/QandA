@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Header } from './Header';
-import { HomePage } from './Homepage';
+import Header from './Header.tsx';
+import { HomePage } from './Homepage.tsx';
 
 function App() {
   return (

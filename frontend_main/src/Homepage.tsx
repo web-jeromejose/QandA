@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { QuestionList } from './QuestionList';
-import { getUnansweredQuestions, QuestionData } from './QuestionsData';
-import { Page } from './Page';
-import { PageTitle } from './PageTitle';
+import { QuestionList } from './QuestionList.tsx';
+import { getUnansweredQuestions, QuestionData } from './QuestionsData.ts';
+import { Page } from './Page.tsx';
+import { PageTitle } from './PageTitle.tsx';
 
 export const HomePage = () => {
   const [questions, setQuestions] = React.useState<QuestionData[]>([]);
