@@ -1,28 +1,30 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
-import React from 'react';
-import { QuestionList } from './QuestionList';
-import { getUnansweredQuestions, QuestionData } from './QuestionsData';
-import { Page } from './Page';
-import { PageTitle } from './PageTitle';
-import { PrimaryButton } from './Styles';
+import { css } from "@emotion/react";
+import React from "react";
+import { QuestionList } from "./QuestionList";
+import { getUnansweredQuestions, QuestionData } from "./QuestionsData";
+import { Page } from "./Page";
+import { PageTitle } from "./PageTitle";
+import { PrimaryButton } from "./Styles";
+import { useNavigate } from "react-router";
 
 export const HomePage = () => {
   const [questions, setQuestions] = React.useState<QuestionData[]>([]);
   const [questionsLoading, setQuestionsLoading] = React.useState(true);
+  const navigate = useNavigate();
 
   React.useEffect(() => {
-    console.log('HomePage - useEffect');
+    console.log("HomePage - useEffect");
     const doGetUnansweredQuestions = async () => {
       const unansweredQuestions = await getUnansweredQuestions();
-      console.log('HomePage - unansweredQuestions', unansweredQuestions);
+      console.log("HomePage - unansweredQuestions", unansweredQuestions);
       setQuestions(unansweredQuestions);
       setQuestionsLoading(false);
     };
     doGetUnansweredQuestions();
   }, []);
   const handleAskQuestionClick = () => {
-    console.log('TODO - move to the AskPage');
+    navigate(`ask`);
   };
 
   return (

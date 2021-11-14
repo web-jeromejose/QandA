@@ -55,8 +55,17 @@ npx create-react-app frontend
 
 ```
 npm install prettier --save-dev
+
  npm install eslint-config-prettier eslint-plugin-prettier --save-dev
+
  npm i react-test-renderer --save-dev
+
+npm install history
+
+npm install react-router-dom@next   --must be version 6
+
+
+
 ```
 
 https://reactjs.org/docs/test-renderer.html
@@ -66,3 +75,11 @@ https://reactjs.org/docs/test-renderer.html
 ```
 npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 ```
+
+## Styling CSS using Emotions
+
+> https://emotion.sh/docs/introduction
+
+## Reference
+
+> https://basarat.gitbook.io/typescript/styleguide#interface
